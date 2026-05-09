@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --navy: #0f1e3c;
+  --navy-light: #1a3060;
+  --yellow: #f2c811;
+  --yellow-hover: #d9b40f;
+  --white: #ffffff;
+  --gray-100: #f7f8fa;
+  --gray-200: #e9ecef;
+  --gray-500: #6c757d;
+  --gray-700: #495057;
+  --text: #1a1a2e;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--gray-100);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header / Nav ── */
+
+header {
+  background-color: var(--navy);
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.nav-brand {
+  color: var(--white);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.nav-brand span {
+  color: var(--yellow);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--yellow);
+}
+
+/* ── Main content ── */
+
+main {
+  flex: 1;
+}
+
+/* ── Hero (Home page) ── */
+
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  color: var(--white);
+  padding: 6rem 2rem 5rem;
+  text-align: center;
+}
+
+.hero-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+}
+
+.hero h1 .accent {
+  color: var(--yellow);
+}
+
+.hero .tagline {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.03em;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ── Buttons ── */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background-color: var(--yellow);
+  color: var(--navy);
+}
+
+.btn-primary:hover {
+  background-color: var(--yellow-hover);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-outline:hover {
+  border-color: var(--white);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ── Section wrapper ── */
+
+.section {
+  padding: 4rem 2rem;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.4rem;
+}
+
+.section-subtitle {
+  color: var(--gray-500);
+  font-size: 0.95rem;
+  margin-bottom: 2.5rem;
+}
+
+.divider {
+  width: 48px;
+  height: 4px;
+  background-color: var(--yellow);
+  border-radius: 2px;
+  margin: 0.6rem 0 2rem;
+}
+
+/* ── About strip (Home page) ── */
+
+.about-strip {
+  background-color: var(--white);
+  border-top: 1px solid var(--gray-200);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.about-strip p {
+  max-width: 720px;
+  color: var(--gray-700);
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+/* ── Portfolio cards ── */
+
+.report-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.report-card {
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  border: 1px solid var(--gray-200);
+}
+
+.report-card-header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--gray-200);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.report-badge {
+  background-color: var(--yellow);
+  color: var(--navy);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.report-card-header h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.report-embed {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  display: block;
+}
+
+.report-card-footer {
+  padding: 0.85rem 1.5rem;
+  font-size: 0.82rem;
+  color: var(--gray-500);
+  background-color: var(--gray-100);
+  border-top: 1px solid var(--gray-200);
+}
+
+/* ── Footer ── */
+
+footer {
+  background-color: var(--navy);
+  color: rgba(255, 255, 255, 0.55);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  font-size: 0.82rem;
+}
+
+footer a {
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 600px) {
+  nav {
+    height: auto;
+    padding: 1rem 0;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .hero {
+    padding: 4rem 1.25rem 3.5rem;
+  }
+
+  .section {
+    padding: 3rem 1.25rem;
+  }
+}
