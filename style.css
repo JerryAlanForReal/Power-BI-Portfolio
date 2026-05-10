@@ -150,6 +150,10 @@ main {
   transform: translateY(1px);
 }
 
+.btn-icon {
+  padding: 0.75rem;
+}
+
 .btn-primary {
   background-color: var(--yellow);
   color: var(--navy);
