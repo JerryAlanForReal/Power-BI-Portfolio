@@ -25,28 +25,31 @@
       <div class="section-inner">
         <h1 class="section-title">Power BI Portfolio</h1>
         <div class="divider"></div>
-        <p class="section-subtitle">Interactive reports - click, filter, and explore directly below.</p>
+        <p class="section-subtitle">Click any report to explore it interactively.</p>
 
-        <div class="report-grid">
+        <div class="card-grid">
 
-          <!-- Report 1: Dashboard In A Day -->
-          <div class="report-card">
-            <div class="report-card-header">
-              <span class="report-badge">Power BI</span>
-              <h2>Dashboard In A Day</h2>
+          <!-- Report 1: Superstore Sales -->
+          <a href="reports/superstore-sales.html" class="portfolio-card">
+            <div class="card-thumb">
+              <img src="reports/images/superstore-sales.jpg" alt="Superstore Sales" />
             </div>
-            <iframe
-              class="report-embed"
-              title="Dashboard In A Day"
-              src="https://app.powerbi.com/view?r=eyJrIjoiOTYwOWFjNDQtMjg4Mi00MmIzLTg5ZDUtN2UzYTExOWExYjU3IiwidCI6IjkyYjQxZTM4LTNjNmMtNDE4Mi1iMjVmLWE0ZGNlZTU1Yzk1MyJ9"
-              allowFullScreen="true"
-            ></iframe>
-            <div class="report-card-footer">
-              Use the slicers and visuals above to explore the data interactively.
+            <div class="card-info">
+              <div class="card-title">Superstore Sales</div>
+              <div class="card-desc">Sales, customer, and operations analysis across regions, products, and shipping modes.</div>
             </div>
-          </div>
+          </a>
 
-          <!-- Add future reports here by duplicating the report-card block above -->
+          <!-- Report 2: Dashboard In A Day -->
+          <a href="reports/dashboard-in-a-day.html" class="portfolio-card">
+            <div class="card-thumb">
+              <img src="reports/images/dashboard-in-a-day.jpg" alt="Dashboard in A Day" />
+            </div>
+            <div class="card-info">
+              <div class="card-title">Dashboard In A Day</div>
+              <div class="card-desc">A comprehensive overview dashboard built as part of Microsoft's Dashboard In A Day training.</div>
+            </div>
+          </a>
 
         </div>
       </div>

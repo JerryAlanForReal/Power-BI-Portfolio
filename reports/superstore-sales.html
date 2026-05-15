@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Superstore Sales | Jerry Beach</title>
+  <meta name="description" content="Superstore Sales — Power BI report by Jerry Beach." />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="../index.html" class="nav-brand">Jerry Beach</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../portfolio.html" class="active">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="section">
+      <div class="section-inner">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../portfolio.html">Portfolio</a>
+          <span class="breadcrumb-sep">›</span>
+          <span>Superstore Sales</span>
+        </nav>
+
+        <h1 class="section-title">Superstore Sales</h1>
+        <div class="divider"></div>
+
+        <iframe
+          class="report-embed"
+          title="Superstore Sales"
+          src="https://app.powerbi.com/view?r=eyJrIjoiMTQ5MmFmYTQtOTg4Ni00ODgwLWIxN2YtMDVhZDkzZDY4NjFkIiwidCI6IjkyYjQxZTM4LTNjNmMtNDE4Mi1iMjVmLWE0ZGNlZTU1Yzk1MyJ9"
+          allowFullScreen="true"
+        ></iframe>
+
+        <!-- C-Suite Q&A -->
+        <div class="qa-section">
+          <h2 class="qa-section-heading">Executive Insights</h2>
+          <p class="qa-section-sub">Common questions a C-Suite executive might ask about this data — and what the report reveals.</p>
+
+          <!-- Revenue & Growth -->
+          <div class="qa-group">
+            <div class="qa-group-title">Revenue &amp; Growth</div>
+
+            <div class="qa-item">
+              <div class="qa-question">What's our total sales by year and quarter? Are we growing, plateauing, or declining?</div>
+              <div class="qa-answer">
+                2015 - $479,860<br>
+                &nbsp;&nbsp;&nbsp;Q1 - $73,931.46<br>
+                &nbsp;&nbsp;&nbsp;Q2 - $85,874.10<br>
+                &nbsp;&nbsp;&nbsp;Q3 - $142,522.57<br>
+                &nbsp;&nbsp;&nbsp;Q4 - $177,528.14<br>
+                2016 - $459,440<br>
+                &nbsp;&nbsp;&nbsp;Q1 - $62,357.68<br>
+                &nbsp;&nbsp;&nbsp;Q2 - $87,713.46<br>
+                &nbsp;&nbsp;&nbsp;Q3 - $128,560.14<br>
+                &nbsp;&nbsp;&nbsp;Q4 - $180,804.66<br>
+                2017 - $600,190<br>
+                &nbsp;&nbsp;&nbsp;Q1 - $92,686.38<br>
+                &nbsp;&nbsp;&nbsp;Q2 - $135,061.19<br>
+                &nbsp;&nbsp;&nbsp;Q3 - $138,056.43<br>
+                &nbsp;&nbsp;&nbsp;Q4 - $234,388.80<br>
+                2018 - $722,050<br>
+                &nbsp;&nbsp;&nbsp;Q1 - $122,260.86<br>
+                &nbsp;&nbsp;&nbsp;Q2 - $127,558.58<br>
+                &nbsp;&nbsp;&nbsp;Q3 - $193,815.83<br>
+                &nbsp;&nbsp;&nbsp;Q4 - $278,416.69<br><br>
+                We are growing<br>
+                In 2016 we had a -4.3% reduction in growth<br>
+                In 2017 we increased revenue by 30.6% from 2016 (25.1% from 2015)<br>
+                In 2018 we increased revenue by 20.3% from 2017 (50.5% from 2015)
+              </div>
+            </div>
+
+            <div class="qa-item">
+              <div class="qa-question">Which months consistently over- or underperform? Do we have seasonal patterns?</div>
+              <div class="qa-answer">
+                February is usually our most underperforming month with January at a close second<br>
+                September, November, and December are consistently our best performing months<br>
+                Q1 always starts slow with a solid ramp up to Q4. Q4 ends on average 150% higher than Q1
+              </div>
+            </div>
+
+            <div class="qa-item">
+              <div class="qa-question">What's our average order value trend over time?</div>
+              <div class="qa-answer">
+                Average order value is trending downward.<br>
+                2015 Q1 was the highest at $582<br>
+                2018 Q4 (current) is at $445
+              </div>
+            </div>
+          </div>
+
+          <!-- Customers -->
+          <div class="qa-group">
+            <div class="qa-group-title">Customers</div>
+
+            <div class="qa-item">
+              <div class="qa-question">Who are our top customers by revenue, and how concentrated is that? (If 20% of customers drive 80% of revenue, I want to know.)</div>
+              <div class="qa-answer">
+                SM-20320 - $25,043.07 in revenue<br>
+                TC-20980 - $19,052.22 in revenue<br>
+                These two make up 1.95% of revenue<br>
+                The top 20 customers make up 11.7% of revenue
+              </div>
+            </div>
+
+            <div class="qa-item">
+              <div class="qa-question">How many customers are one-time buyers vs. repeat buyers?</div>
+              <div class="qa-answer">
+                13 customers are one-time buyers (1.64%)
+              </div>
+            </div>
+
+            <div class="qa-item">
+              <div class="qa-question">Are we growing our customer base year over year, or are we selling more to the same people?</div>
+              <div class="qa-answer">
+                In 2015 we had 589 distinct customers with orders. In 2018 we had 690. Between 2015 and 2018 we have 793 distinct customers with orders.
+              </div>
+            </div>
+          </div>
+
+          <!-- Products -->
+          <div class="qa-group">
+            <div class="qa-group-title">Products</div>
+
+            <div class="qa-item">
+              <div class="qa-question">Which products (or product categories, if we can decode the Product ID prefixes like FUR, OFF) drive the most revenue?</div>
+              <div class="qa-answer">
+                All three categories are close, but Technology drives 36.6% of the revenue.<br>
+                Canon imageCLASS 2200 Advanced Copier drives the highest revenue ($61,600 from 2015-2018)
+              </div>
+            </div>
+
+            <div class="qa-item">
+              <div class="qa-question">Are there products with high order volume but low revenue - or vice versa?</div>
+              <div class="qa-answer">
+                Products with high order volume but low revenue:<br>
+                Staple envelope: Total Revenues - $1675.63, Order Count - 47<br>
+                Staples: Total Revenues - $755.47, Order Count - 46<br>
+                Easy-staple paper: Total Revenues - $2414.14, Order Count - 44<br><br>
+                Products with low order volume but high revenue:<br>
+                Canon imageCLASS 2200 Advanced Copier: Total Revenues - $61599.83, Order Count - 5<br>
+                Cisco TelePresence System EX90 Videoconferencing Unit: Total Revenues - $22638.48, Order Count - 1<br>
+                HP Designjet T520 Inkjet Large Format Printer - 24" Color: Total Revenues - $18374.90, Order Count - 3
+              </div>
+            </div>
+          </div>
+
+          <!-- Geography -->
+          <div class="qa-group">
+            <div class="qa-group-title">Geography</div>
+
+            <div class="qa-item">
+              <div class="qa-question">Which states are our strongest markets?</div>
+              <div class="qa-answer">
+                California - $446,310<br>
+                New York - $306,360
+              </div>
+            </div>
+
+            <div class="qa-item">
+              <div class="qa-question">Which are underperforming relative to population?</div>
+              <div class="qa-answer">
+                Florida - $88,436 with 21,254,926 population
+              </div>
+            </div>
+
+            <div class="qa-item">
+              <div class="qa-question">Are there states where we have zero or near-zero presence that represent growth opportunities?</div>
+              <div class="qa-answer">
+                Top Five:<br>
+                West Virginia - 0.0007 orders per capita<br>
+                Maine - 0.0009 orders per capita<br>
+                Kansas - 0.0010 orders per capita<br>
+                North Dakota - 0.0012 orders per capita<br>
+                Iowa - 0.0014 orders per capita
+              </div>
+            </div>
+          </div>
+
+          <!-- Operations / Shipping -->
+          <div class="qa-group">
+            <div class="qa-group-title">Operations / Shipping</div>
+
+            <div class="qa-item">
+              <div class="qa-question">What's the average time from order to ship, by ship mode?</div>
+              <div class="qa-answer">
+                Standard Class: 5.01 days<br>
+                Second Class: 3.25 days<br>
+                First Class: 2.18 days
+              </div>
+            </div>
+
+            <div class="qa-item">
+              <div class="qa-question">Are certain ship modes correlated with larger or smaller orders?</div>
+              <div class="qa-answer">
+                There is no correlation with larger or smaller orders when it comes to ship modes. Average order values are $455 to $479.
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- end Q&A -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jerry Beach | <a href="https://www.linkedin.com/in/jerrybeach" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="vertical-align:middle" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></p>
+  </footer>
+
+</body>
+</html>
